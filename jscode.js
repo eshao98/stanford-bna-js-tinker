@@ -1,8 +1,7 @@
       
-      var link = document.getElementById("link"),
-          img = document.getElementById("img");
-
+      var link = document.getElementById("link");
       var hover_img=document.getElementById("img");
+
       document.addEventListener("mousemove", getMouse);
 
       var img_pos={x:0, y:0};
@@ -11,9 +10,9 @@
 
       var mouse={x:0, y:0};
 
-      function getMouse(e){
-      	mouse.x = e.pageX;
-      	mouse.y = e.pageY;
+      function getMouse(elem){
+      	mouse.x = elem.pageX;
+      	mouse.y = elem.pageY;
       }
 
       function followMouse(){
