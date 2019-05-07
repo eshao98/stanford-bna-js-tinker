@@ -4,19 +4,30 @@
     <title>Javascript Mouseover</title>
     
     <style type ="text/css">
+
     	body{
     		padding: 0;
     		margin: 20px auto;
     		text-align: center;
     	}
+    	
     	#img{
-        position: fixed;
-        right:0;
-        bottom:0;
+        position: absolute;
+        padding: 10px 10px 10px 10px;
         display: none;
+        z-index: 1;
       	}
+
+      	.move{
+		  -moz-transform: scaleX(-1);
+		  -o-transform: scaleX(-1);
+		  -webkit-transform: scaleX(-1);
+		  transform: scaleX(-1);
+      	}
+
     </style>
   </head>
+  
   <body>
 
   	<div id = "link">
